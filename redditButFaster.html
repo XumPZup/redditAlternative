@@ -5,8 +5,15 @@ label{color:#bfbfbf;}
 .title{font-size:22px; color:#bfbfbf; text-decoration:none;}
 .author{font-size:16px; color:#bfbfbf;}
 a:hover{color:#ffffff;}
-div{width:30vw; height:32vh; float:left; background-color:#0d0d0d; border:2px solid black}
+.basic{width:30vw; height:32vh; float:left; background-color:#0d0d0d; border:2px solid black}
+.more{color:#ff6666; float:left; padding-bottom:30;}
+.less{color:#ff6666; float:left; padding-bottom:30;}
+.more:hover{color:#ffe6e6}
+p{color:#ffffff;}
+.media{height:80vh; width:auto;}
+.extended{z-index:1; position: fixed; height:100%; background-color:#0d0d0d; overflow:scroll;}
 </style>
+<div id='commands'>
 <label>Subreddit: </label>
 <input type="text" id="subreddit"/>
 <label>Random </label>
@@ -25,8 +32,8 @@ div{width:30vw; height:32vh; float:left; background-color:#0d0d0d; border:2px so
 <option value='year'>This year</option>
 <option value='all'>All time</option>
 </select>
-
 <button id="fetch_btn">Fetch</button><br>
+</div>
 </head>
 <body>
 <script src="jsonparser.js"></script>
