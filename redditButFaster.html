@@ -1,0 +1,34 @@
+<html><head><style>
+html{background-color:#1a1a1a;}
+label{color:#bfbfbf;}
+.thumb{display:none;}
+.title{font-size:22px; color:#bfbfbf; text-decoration:none;}
+.author{font-size:16px; color:#bfbfbf;}
+a:hover{color:#ffffff;}
+div{width:30vw; height:32vh; float:left; background-color:#0d0d0d; border:2px solid black}
+</style>
+<label>Subreddit: </label>
+<input type="text" id="subreddit"/>
+<label>Random </label>
+<input type="checkbox" id="random"/>
+<select id='sort'>
+<option value='hot'>Hot</option>
+<option value='top'>Top</option>
+<option value='new'>New</option>
+</select>
+
+<select id='time'>
+<option value='hour'>Now</option>
+<option value='day'>Today</option>
+<option value='week'>This week</option>
+<option value='month'>This month</option>
+<option value='year'>This year</option>
+<option value='all'>All time</option>
+</select>
+
+<button id="fetch_btn">Fetch</button><br>
+</head>
+<body>
+<script src="jsonparser.js"></script>
+</body>
+</html>
